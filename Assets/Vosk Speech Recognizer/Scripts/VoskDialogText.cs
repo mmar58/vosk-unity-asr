@@ -68,19 +68,12 @@ public class VoskDialogText : MonoBehaviour
 		AddResponse("так, и что дальше");
 	}
 
-	void Say(string response)
-	{
-		System.Diagnostics.Process.Start("/usr/bin/say", response); 
-	}
-
 	void AddFinalResponse(string response) {
-		Say(response);
 		DialogText.text = response + "\n";
 		ResetState();
 	}
 
 	void AddResponse(string response) {
-        Say(response);
 		DialogText.text = response + "\n\n";
 
 		DialogText.text += "крестьянин " + (man_left ? "слева" : "справа") + "\n";

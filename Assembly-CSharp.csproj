@@ -56,29 +56,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="F:\Unity Projects\vosk-unity-asr\Assets\Vosk Speech Recognizer\ThirdParty\Zip\Ionic.Zip.Unity.dll" />
     <Analyzer Include="D:\Program Files\Unity Editor\2022.3.21f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\Program Files\Unity Editor\2022.3.21f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThirdParty\Vosk\VoskPINVOKE.cs" />
-    <Compile Include="Assets\Scripts\RecognitionResult.cs" />
-    <Compile Include="Assets\Scripts\VoskSpeechToText.cs" />
-    <Compile Include="Assets\ThirdParty\Vosk\SpkModel.cs" />
-    <Compile Include="Assets\ThirdParty\Vosk\Vosk.cs" />
-    <Compile Include="Assets\Scripts\VoskResultText.cs" />
-    <Compile Include="Assets\Scripts\VoiceProcessor.cs" />
-    <Compile Include="Assets\ThirdParty\Vosk\Model.cs" />
-    <Compile Include="Assets\ThirdParty\Vosk\VoskRecognizer.cs" />
-    <Compile Include="Assets\Scripts\VoskDialogText.cs" />
+    <Compile Include="Assets\Vosk Speech Recognizer\ThirdParty\Vosk\Model.cs" />
+    <Compile Include="Assets\Vosk Speech Recognizer\Scripts\VoskResultText.cs" />
+    <Compile Include="Assets\Vosk Speech Recognizer\ThirdParty\Vosk\VoskPINVOKE.cs" />
+    <Compile Include="Assets\Vosk Speech Recognizer\ThirdParty\Vosk\VoskRecognizer.cs" />
+    <Compile Include="Assets\Vosk Speech Recognizer\Scripts\VoskDialogText.cs" />
+    <Compile Include="Assets\Vosk Speech Recognizer\ThirdParty\Vosk\Vosk.cs" />
+    <Compile Include="Assets\Vosk Speech Recognizer\ThirdParty\Vosk\SpkModel.cs" />
+    <Compile Include="Assets\Vosk Speech Recognizer\Scripts\VoskSpeechToText.cs" />
+    <Compile Include="Assets\Vosk Speech Recognizer\Scripts\RecognitionResult.cs" />
+    <Compile Include="Assets\Vosk Speech Recognizer\Scripts\VoiceProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\ThirdParty\Zip\Ionic.Zip.Unity.dll" />
-    <None Include="Assets\ThirdParty\Zip\License.txt" />
-    <None Include="Assets\ThirdParty\Vosk\Plugins\Windows\libwinpthread-1.dll" />
-    <None Include="Assets\ThirdParty\Vosk\Plugins\Windows\libvosk.dll" />
-    <None Include="Assets\ThirdParty\Vosk\Plugins\Windows\libstdc++-6.dll" />
-    <None Include="Assets\ThirdParty\Zip\Ionic.Zip.Unity.XML" />
-    <None Include="Assets\ThirdParty\Vosk\Plugins\Windows\libgcc_s_seh-1.dll" />
+    <None Include="Assets\Vosk Speech Recognizer\ThirdParty\Zip\Ionic.Zip.Unity.dll" />
+    <None Include="Assets\Vosk Speech Recognizer\ThirdParty\Zip\License.txt" />
+    <None Include="Assets\Vosk Speech Recognizer\ThirdParty\Vosk\Plugins\Windows\libwinpthread-1.dll" />
+    <None Include="Assets\Vosk Speech Recognizer\ThirdParty\Vosk\Plugins\Windows\libvosk.dll" />
+    <None Include="Assets\Vosk Speech Recognizer\ThirdParty\Vosk\Plugins\Windows\libstdc++-6.dll" />
+    <None Include="Assets\Vosk Speech Recognizer\ThirdParty\Zip\Ionic.Zip.Unity.XML" />
+    <None Include="Assets\Vosk Speech Recognizer\ThirdParty\Vosk\Plugins\Windows\libgcc_s_seh-1.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -402,7 +403,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Ionic.Zip.Unity">
-      <HintPath>Assets\ThirdParty\Zip\Ionic.Zip.Unity.dll</HintPath>
+      <HintPath>Assets\Vosk Speech Recognizer\ThirdParty\Zip\Ionic.Zip.Unity.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
@@ -919,6 +920,10 @@
       <Project>{5087C77C-9A27-8100-289C-40A37E75ACAB}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Bunny83.simpleJson.csproj">
+      <Project>{9004801D-1132-47C6-21BA-1198225B405F}</Project>
+      <Name>Bunny83.simpleJson</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Updater.csproj">
       <Project>{0ED16016-83DA-0DC8-9987-5A3B02A9D622}</Project>
       <Name>Unity.AI.Navigation.Updater</Name>
@@ -934,10 +939,6 @@
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{1F5C8C81-F273-AD8B-3319-52A0464A90F0}</Project>
       <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="Bunny83.simpleJson.csproj">
-      <Project>{9004801D-1132-47C6-21BA-1198225B405F}</Project>
-      <Name>Bunny83.simpleJson</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{27557133-FB40-CE9B-5BD3-9559F7B71025}</Project>
